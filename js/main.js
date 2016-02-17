@@ -1,6 +1,18 @@
 $(document).ready(function () {
 
+    /*function changeTotal(points) {
+        total = total + points;
+        //return total;
+    }*/
+
     var total = 0;
+
+    /*$('.add1').click(function () {
+        //var newTotal changeTotal(1);
+        changeTotal(1);
+        //$('.score').text(newTotal);
+        $('.score').text(total);
+    });*/
 
     $('.add1').click(function () {
         total = total + 1;
@@ -57,6 +69,16 @@ $(document).ready(function () {
             $('#light-switch').removeClass('dark');
             lights = 'on';
         }
+    });
+
+    $('header ul li a').hover(function () {
+        $('.mega-menu').slideDown();
+    }, function () {
+        $('.mega-menu').slideUp();
+    });
+
+    $('button .fadeIn').click(function () {
+        $(this).next().fadeToggle();
     });
 
 });

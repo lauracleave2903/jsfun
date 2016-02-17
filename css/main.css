@@ -140,9 +140,10 @@ header {
 }
 
 header ul,
-header li {
+header ul li {
     list-style: none;
     display: inline;
+    margin-right: 30px;
 }
 
 .logo {
@@ -157,6 +158,8 @@ header li {
     line-height: 1;
     text-align: center;
     color: white;
+    position: relative;
+    top: -20px;
 }
 
 h1 {
@@ -179,6 +182,7 @@ h1 {
 }
 
 section {
+    padding-top: 9em;
     text-align: center;
 }
 
@@ -188,6 +192,21 @@ section {
 
 .dark {
     background: black;
+}
+
+.mega-menu {
+    background: #3B3C3D;
+    padding: 40px;
+    color: white;
+    display: none;
+}
+
+.fadeHidden {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background: green;
+    display: none;
 }
 
 
